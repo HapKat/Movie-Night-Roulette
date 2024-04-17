@@ -1,0 +1,181 @@
+body {
+    text-align: center;
+    background-color: pink;
+}
+
+h1 {
+    color: palevioletred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* kacheln richtig anrichten */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    flex: 1; /* Nimmt den verfügbaren Platz in der Flex-Container-Row ein */
+    margin-right: 0px; /* Füge einen rechten Abstand hinzu */
+    flex-wrap: wrap;
+}
+
+.right-section {
+    display: flex;
+    flex: 1; /* Nimmt den verfügbaren Platz in der Flex-Container-Row ein */
+}
+
+.graph-and-ranking {
+    display: flex;
+}
+
+.table-container {
+    flex-basis: 100%; /* Nimmt die volle Breite der Flex-Container-Row ein */
+    margin-top: 20px; /* Füge einen oberen Abstand hinzu */
+}
+
+.stat {
+    flex: 1; /* Jedes Element erhält die Hälfte des verfügbaren Platzes */
+    max-width: 50%; /* Optional: Begrenzt die Breite jedes Elements */
+    max-height: 50%;
+    margin: 10px; /* Optional: Abstand zwischen den Elementen */
+    border-color: palevioletred;
+    border-style:solid ;
+}
+
+.movie_list {
+    flex: 1;
+    border-color: palevioletred;
+    border-style:solid ;
+}
+
+
+.members {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin: 2px;
+    position: relative;
+}
+
+img {
+    height: 280px;
+    padding: 10px;
+}
+
+
+.box {
+    background-color: white;
+    border: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.opague {
+    display: none;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.movie_list ul {
+    list-style-type: none;  /* Aufzählungspunkt */
+    list-style-position: outside;  /* Außerhalb des Listenelements */
+    margin: 10px;  /* Äußerer Abstand */
+    padding: 5px;  /* Innerer Abstand */
+    display: inline-block;  /* Darstellungsart */
+    color: white;
+    font-size: 25px;
+}
+
+/* Tabelle */
+.punsh_and_reinf {
+    align-items: center;
+    margin-left: 150px;
+    display:inline-block;
+}
+
+
+/* Add new film */
+
+.add {
+    border: palevioletred;
+    border-radius: 20px;
+}
+
+.input {
+    margin-left: 100px;
+    align-items: left;
+}
+
+.label {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Punkte für Strikes und Successes */
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    border: 1px solid black; /* Border for empty circles */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot.filled {
+    background-color: black; /* Filled circle color */
+    border: none; /* Remove border for filled circles */
+}
+
+.button {
+    width: 50px;
+    height: 10px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 8px;
+    margin: 2px;
+    position: relative;
+}
+
+/* Dark mode */
+.dark{
+    background-color: black;
+}
+
+.dark_mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 40px;
+    background-color: #A5ABFF;
+    border-radius: 10px;
+    cursor: pointer;
+}

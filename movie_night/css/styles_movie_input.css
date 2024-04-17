@@ -1,0 +1,136 @@
+body {
+    text-align: center;
+    background-color: pink;
+}
+
+h1 {
+    color: palevioletred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.members {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin: 2px;
+    position: relative;
+}
+
+img {
+    height: 280px;
+    padding: 10px;
+}
+
+.movie_input {
+    border-radius: 7px;
+    margin: 2px;
+    height: 20px;
+    border-color: black;
+}
+
+.result {
+    font-size: 20;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: palevioletred;
+}
+
+.box {
+    background-color: white;
+    border: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.opague {
+    display: none;
+}
+
+.winner {
+    font-size: 40px;
+    color: white;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/* Reihenfolge */
+
+.order h1 {
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin: 2px;
+    position: relative;
+}
+
+.order p {
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        margin: 1px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* Zentriert die Elemente horizontal */
+    align-items: flex-start; /* Zentriert die Elemente vertikal */
+    height: 100vh; /* Vollständige Höhe des Viewports nutzen */
+}
+
+.input {
+    /* Stil für die "input" Klasse */
+    flex: 0.5; /* Flexibles Wachstum, nimmt verfügbaren Platz ein */
+    text-align: center; /* Zentriert den Text im "input"-Element */
+}
+
+.order {
+    /* Stil für die "order" Klasse */
+    flex-basis: 10%; /* Festgelegte Breite für das "order"-Element */
+    margin-left: 0px; /* Optional: Abstand zwischen den beiden Klassen */
+    align-self: flex-start;
+    border-radius: 10%;
+    border-color: palevioletred;
+}
+
+.people{
+    font-size: 25px;
+    color: white;
+}
+
+/* Dark mode */
+.dark{
+    background-color: black;
+}
+
+.dark_mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 40px;
+    background-color: #A5ABFF;
+    border-radius: 10px;
+    cursor: pointer;
+}

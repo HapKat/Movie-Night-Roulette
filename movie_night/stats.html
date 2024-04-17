@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <link href="css/style_stats.css" rel="stylesheet">
+
+    <body>
+        <h1>Statistics</h1>
+
+        <div class="flex-container">
+            <div class="left-section">
+            
+            <div class="graph-and-ranking">
+            <div class="stat most_movies">
+                <h2>Most movies from</h2>
+                <canvas id="myChart" width="350" height="200"></canvas>
+            </div>
+
+            <div class="stat ratings movie_list">
+                <h2>Movie ratings by person</h2>
+                <ul id="ratings"></ul>
+            </div>
+        </div>
+
+        <div class="punsh_and_reinf">
+            <h2>Punishment and reinforcement</h2>
+            <table border="1">
+                <tr>
+                  <th></th>
+                  <th>Kathi</th>
+                  <th>Marvin</th>
+                  <th>Salva</th>
+                  <th>Chris</th>
+                </tr>
+                <tr>
+                  <th>Strikes</th>
+                  <td><div id="kathi_bad"></div></td>
+                  <td><div id="marvin_bad"></div></td>
+                  <td><div id="salva_bad"></div></td>
+                  <td><div id="chris_bad"></div></td>
+                </tr>
+                <tr>
+                    <th>Success</th>
+                    <td><div id="kathi_good"></div></td>
+                    <td><div id="marvin_good"></div></td>
+                    <td><div id="salva_good"></div></td>
+                    <td><div id="chris_good"></div></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><button type="button" class="button opague" id="kathi_punishment">Punished!</button>
+                        <button type="button" class="button opague" id="kathi_reinforcement">Reinforced!</button></td>
+                    <td><button type="button" class="button opague" id="marvin_punishment">Punished!</button>
+                        <button type="button" class="button opague" id="marvin_reinforcement">Reinforced!</button></td>
+                    <td><button type="button" class="button opague" id="salva_punishment">Punished!</button>
+                        <button type="button" class="button opague" id="salva_reinforcement">Reinforced!</button></td>
+                    <td><button type="button" class="button opague" id="chris_punishment">Punished!</button>
+                        <button type="button" class="button opague" id="chris_reinforcement">Reinforced!</button></td>
+                </tr>
+              </table>
+        </div>
+        </div>
+
+        <div class="right-section">
+            <div class="stat top3 movie_list">
+                <h2>Best rated movies</h2>
+                <ul id="top3"></ul>
+            </div>
+
+            <div class="movie_list">
+                <h2>Movie list</h2>
+                <ul id="allMovies"></ul>
+            </div>
+        </div>
+        </div>
+        
+
+
+        <div class="add">
+            <h1>Add new movies you watched here to the database:</h1><br>
+
+        <form id="addNew">
+            <label class ="input label" for="new_name">Film name</label>
+            <input class="input" type="text" id="new_name" name="new_name"/><br>
+            <label class="input label" for="avg_rating">Average rating</label>
+            <input class="input" type="number" id="avg_rating" name="avg_rating"/>
+            <div class="dropdown-container">
+                <label class="input label" for="who">Auf wessen Scheiß ist das gewachsen?</label>
+                <select id="who" name="options">
+                    <option value="" disabled selected>-</option>
+                    <option value="kathi">Kathi</option>
+                    <option value="marvin">Marvin</option>
+                    <option value="salva">Salva</option>
+                    <option value="chris">Chris</option>
+                </select>
+            </div>
+            <label class="input label" for="link">Letterboxd link</label>
+            <input class="input" type="link" id="link" name="link"/><br>
+
+            <button type="button" id="add_movie" class="members">Add film</button>
+        </form>
+        
+            
+        </div>    
+       
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/stats.js"></script>
+        <script src="js/charts.js"></script>
+
+    </body>
+
+</html>

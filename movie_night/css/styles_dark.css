@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: #EC5D5D;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    color: #EC5D5D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.members {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin: 2px;
+}
+
+img {
+    height: 300px;
+    padding: 10px;
+}
+
+.movie_input {
+    border-radius: 7px;
+    margin: 2px;
+    height: 20px;
+    border-color: black;
+}
+
+.light_mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 40px;
+    background-color: #FA8F96;
+    border-radius: 10px;
+}

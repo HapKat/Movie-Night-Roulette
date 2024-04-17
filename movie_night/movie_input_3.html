@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <link href="css/styles_movie_input.css" rel="stylesheet">
+    <p id="ps" class="opague">3</p>
+    <head>
+        <title>
+            Movie input
+        </title>
+    </head>
+    <body>
+        <p>Who is bailing on us, huh?. Salva? We all know it's you.</p>
+
+        <div class="flex-container">
+        <div class="input">
+            <p>Person 1</p>
+            <label class ="input" for="m1"> Movie number 1:</label>
+            <input class="movie_input" type="text" id="m1" name="m1"/><br>
+            <label for="m2"> Movie number 2:</label>
+            <input class="movie_input" type="text" id="m2" name="m2"/><br>
+            <label for="m2"> Movie number 3:</label>
+            <input class="movie_input" type="text" id="m3" name="m3"/>
+            
+            <p>Person 2</p>
+            <label for="m1"> Movie number 4:</label>
+            <input class="movie_input" type="text" id="m4" name="m1"/><br>
+            <label for="m2"> Movie number 5:</label>
+            <input class="movie_input" type="text" id="m5" name="m2"/><br>
+            <label for="m2"> Movie number 6:</label>
+            <input class="movie_input" type="text" id="m6" name="m3"/>
+            
+            <p>Person 3</p>
+            <label for="m1"> Movie number 7:</label>
+            <input class="movie_input" type="text" id="m7" name="m1"/><br>
+            <label for="m2"> Movie number 8:</label>
+            <input class="movie_input" type="text" id="m8" name="m2"/><br>
+            <label for="m2"> Movie number 9:</label>
+            <input class="movie_input" type="text" id="m9" name="m3"/><br>
+
+            <button type="button" class="members" id="start_random">Randomize here!</button><br>
+
+        
+            <form id ="box" class="box">
+                <label id="topThree1" class="result num"></label>
+                <label id="topThree1_name" class="result name"></label><br>
+                <label id="topThree2" class="result num"></label>
+                <label id="topThree2_name" class="result name"></label><br>
+                <label id="topThree3" class="result num"></label>
+                <label id="topThree3_name" class="result name"></label><br>
+            </form>
+
+            <div>
+                <button type="button" class="members opague center" id="start_final">Press this if you are ready</button><br>
+                <label id="winner" class="winner result num"></label>
+                <label id="winner_name" class="winner result name"></label><br>
+            </div>
+            </div>
+
+            <div class="members order">
+                <h1>Reihenfolge</h1> 
+                <div class="movie_list">
+                    <p><div class="people" id="first_person"></div></p>
+                    <p><div class="people" id="second_person"></div></p>
+                    <p><div class="people" id="third_person"></div></p>
+                    <p><div class="people" id="forth_person"></div></p>
+                </div>
+                <button type="button" class="members center" id="rotate">Rotate</button>
+            </div>
+
+        </div>
+            <script src="js/movie_randomizer.js"></script>
+            <script src="js/order.js"></script>
+            
+        
+    </body>
+</html>

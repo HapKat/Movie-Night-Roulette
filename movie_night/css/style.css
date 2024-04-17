@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+    background-color: pink;
+}
+
+h1 {
+    color: palevioletred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.members {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin: 2px;
+    position: relative;
+}
+
+img {
+    height: 280px;
+    padding: 10px;
+}
+
+
+.box {
+    background-color: white;
+    border: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.opague {
+    display: none;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Letterboxd link image */
+.lb_link {
+    line-height: 0%;
+    background-color: white;
+    border-radius: 10%;
+    margin: 20px 20px;
+    padding: 15px 15px;
+    position: absolute;
+    opacity: 90%;
+}
+
+.lb_link img {
+    width: 150px;
+    height: auto;
+}
+
+.lb_link p {
+    font-size: 16px;
+    color: palevioletred;
+    }
+
+.lb_link, .barbie {
+    display: inline-block;
+}
+
+
+/* Dark mode */
+.dark{
+    background-color: black;
+}
+
+.dark_mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 40px;
+    background-color: #A5ABFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
